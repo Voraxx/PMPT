@@ -44,7 +44,7 @@ public class BinaeresGatterUndTest {
         Eingang eingangA = new Eingang(true);
         Eingang eingangB = new Eingang(false);
         Gatter schaltung = new BinaeresGatterUnd(eingangA, eingangB);
-        assertEquals("( WAHR UND FALSCH ) ", schaltung.toString());
+        assertEquals("(WAHR UND FALSCH)", schaltung.toString());
     }
 
     /**
@@ -55,7 +55,7 @@ public class BinaeresGatterUndTest {
         Gatter eingangA = new Eingang(false);
         Gatter eingangB = new Eingang(false);
         Gatter schaltung = new BinaeresGatterUnd(eingangA, eingangB);
-        assertEquals("( FALSCH UND FALSCH ) ", schaltung.toString());
+        assertEquals("(FALSCH UND FALSCH)", schaltung.toString());
     }
 
     /**
@@ -66,6 +66,6 @@ public class BinaeresGatterUndTest {
         Gatter eingangA = new Eingang(true);
         Gatter eingangB = new Eingang(true);
         Gatter schaltung = new BinaeresGatterUnd(eingangA, eingangB);
-        assertEquals("( WAHR UND WAHR ) ", schaltung.toString());
+        assertEquals("(WAHR UND WAHR)", schaltung.toString());
     }
 }

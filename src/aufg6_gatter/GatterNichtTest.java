@@ -10,7 +10,7 @@ public class GatterNichtTest {
     public void testToString01(){
         Gatter eingang = new Eingang(false);
         Gatter schaltung = new GatterNicht(eingang);
-        assertEquals("( NICHT FALSCH ) ", schaltung.toString());
+        assertEquals("(NICHT FALSCH)", schaltung.toString());
     }
 
     /**
@@ -20,7 +20,7 @@ public class GatterNichtTest {
     public void testToString02(){
         Gatter eingang = new Eingang(true);
         Gatter schaltung = new GatterNicht(eingang);
-        assertEquals("( NICHT WAHR ) ", schaltung.toString());
+        assertEquals("(NICHT WAHR)", schaltung.toString());
     }
 
     /**

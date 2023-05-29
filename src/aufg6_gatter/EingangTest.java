@@ -9,7 +9,7 @@ public class EingangTest {
     @Test
     public void testToString01(){
         Gatter eingang = new Eingang(true);
-        assertEquals("WAHR ", eingang.toString());
+        assertEquals("WAHR", eingang.toString());
     }
 
     /**
@@ -18,7 +18,7 @@ public class EingangTest {
     @Test
     public void testToString02(){
         Gatter eingang = new Eingang(false);
-        assertEquals("FALSCH ", eingang.toString());
+        assertEquals("FALSCH", eingang.toString());
     }
 
     /**

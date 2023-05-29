@@ -34,6 +34,6 @@ public class GatterNicht implements Gatter {
 
     @Override
     public String toString(){
-        return "( " + INFO_GATTER_NICHT + eingang.toString() + ") ";
+        return "(" + INFO_GATTER_NICHT + eingang.toString() + ")";
     }
 }

@@ -16,7 +16,7 @@ package aufg6_gatter;
  * <a href="https://github.com/Voraxx">...</a>
  */
 public class BinaeresGatterOder extends BinaeresGatter implements Gatter {
-    public static final String INFO_BINAERES_GATTER_ODER = "ODER ";
+    public static final String INFO_BINAERES_GATTER_ODER = " ODER ";
     private final boolean output;
     private final Gatter[] eingaenge;
 
@@ -34,6 +34,6 @@ public class BinaeresGatterOder extends BinaeresGatter implements Gatter {
 
     @Override
     public String toString(){
-        return "( " + this.eingaenge[0].toString() + INFO_BINAERES_GATTER_ODER + this.eingaenge[1].toString() + ") ";
+        return "(" + this.eingaenge[0].toString() + INFO_BINAERES_GATTER_ODER + this.eingaenge[1].toString() + ")";
     }
 }

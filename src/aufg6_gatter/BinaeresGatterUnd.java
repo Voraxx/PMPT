@@ -18,7 +18,7 @@ package aufg6_gatter;
 public class BinaeresGatterUnd extends BinaeresGatter implements Gatter{
     private final boolean output;
     private final Gatter[] eingaenge;
-    public static final String INFO_BINAERES_GATTER_UND = "UND ";
+    public static final String INFO_BINAERES_GATTER_UND = " UND ";
 
     public BinaeresGatterUnd(Gatter eingangA, Gatter eingangB){
         this.eingaenge = new Gatter[2];
@@ -34,6 +34,6 @@ public class BinaeresGatterUnd extends BinaeresGatter implements Gatter{
 
     @Override
     public String toString(){
-        return "( " + this.eingaenge[0].toString() + INFO_BINAERES_GATTER_UND + this.eingaenge[1].toString() + ") ";
+        return "(" + this.eingaenge[0].toString() + INFO_BINAERES_GATTER_UND + this.eingaenge[1].toString() + ")";
     }
 }

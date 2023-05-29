@@ -14,7 +14,7 @@ public class SchaltungTest {
         Gatter oderA = new BinaeresGatterOder(nichtA, eingangA);
         Gatter oderB = new BinaeresGatterOder(nichtA, eingangB);
         Gatter und = new BinaeresGatterUnd(oderA, oderB);
-        assertEquals("( ( ( NICHT WAHR ) ODER WAHR ) UND ( ( NICHT WAHR ) ODER FALSCH ) ) ", und.toString());
+        assertEquals("(((NICHT WAHR) ODER WAHR) UND ((NICHT WAHR) ODER FALSCH))", und.toString());
     }
 
     /**
@@ -28,7 +28,7 @@ public class SchaltungTest {
         Gatter oderA = new BinaeresGatterOder(nichtA, eingangA);
         Gatter oderB = new BinaeresGatterOder(nichtA, eingangB);
         Gatter und = new BinaeresGatterUnd(oderA, oderB);
-        assertEquals("( ( ( NICHT WAHR ) ODER WAHR ) UND ( ( NICHT WAHR ) ODER WAHR ) ) ", und.toString());
+        assertEquals("(((NICHT WAHR) ODER WAHR) UND ((NICHT WAHR) ODER WAHR))", und.toString());
     }
 
     /**
@@ -42,21 +42,6 @@ public class SchaltungTest {
         Gatter oderA = new BinaeresGatterOder(nichtA, eingangA);
         Gatter oderB = new BinaeresGatterOder(nichtA, eingangB);
         Gatter und = new BinaeresGatterUnd(oderA, oderB);
-        assertEquals("( ( ( NICHT FALSCH ) ODER FALSCH ) UND ( ( NICHT FALSCH ) ODER FALSCH ) ) ", und.toString());
-    }
-
-    /**
-     * Test 04 der Methode toString() mit fehlerhaftem Input, komplexe Schaltung.
-     */
-    @Test
-    public void testToString04(){
-        // KEINE KOPIE
-        Gatter eingangA = new Eingang(false);
-        Gatter eingangB = new Eingang(false);
-        Gatter nichtA = new GatterNicht(eingangA);
-        Gatter oderA = new BinaeresGatterOder(nichtA, eingangA);
-        Gatter oderB = new BinaeresGatterOder(nichtA, eingangB);
-        Gatter und = new BinaeresGatterUnd(oderA, oderB);
-        assertEquals("( ( ( NICHT FALSCH ) ODER FALSCH ) UND ( ( NICHT FALSCH ) ODER FALSCH ) ) ", und.toString());
+        assertEquals("(((NICHT FALSCH) ODER FALSCH) UND ((NICHT FALSCH) ODER FALSCH))", und.toString());
     }
 }

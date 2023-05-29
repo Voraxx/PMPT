@@ -30,7 +30,7 @@ public class Eingang implements Gatter {
 
     @Override
     public String toString(){
-        return output? "WAHR ": "FALSCH ";
+        return output? "WAHR": "FALSCH";
     }
 
 
