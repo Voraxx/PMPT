@@ -1,8 +1,8 @@
 package novy;
 
 public interface IFactory {
-    IClone createClone();
-
+    CloneKing createClone();
+    CloneArmy createCloneArmy();
 
 
 }
