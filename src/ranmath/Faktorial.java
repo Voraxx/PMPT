@@ -1,6 +1,6 @@
 package ranmath;
 
-public class Fakultaet {
+public class Faktorial {
     public static double fakultaet(int n){
         try {
             if(n==0){

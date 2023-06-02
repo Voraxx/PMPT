@@ -82,7 +82,7 @@ public class SHA3EncryptionExample {
         String input = "Hello, World!";
         byte[] inputBytes = input.getBytes(StandardCharsets.UTF_8);
 
-        byte[] encrypted = KeccakF.keccakF(inputBytes);
+        byte[] encrypted = KSHA3.keccakF(inputBytes);
 
         // Ausgabe des verschlüsselten Ergebnisses
         System.out.println("Verschlüsseltes Ergebnis: " + bytesToHex(encrypted));

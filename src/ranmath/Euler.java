@@ -1,23 +1,56 @@
 package ranmath;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
+
+/**
+ * Euler
+ * Version 1.0
+ * 2023/05/20
+ * <p>
+ * This is my own implementation of Euler's number e.
+ * <p>
+ * Attribution
+ * CC BY
+ * <a href="https://creativecommons.org/licenses/by/4.0/">...</a>
+ * <p>
+ * Adrian Morgenthal
+ * <a href="https://github.com/Voraxx">...</a>
+ */
+
 public class Euler {
 
-    public static double euler(int n){
-        if(n==1){
-            return 1;
-        } else {
-            return (double) 1 /fakultaet(n);
-            //return  Math.pow( (1+(double)(1/n)), n);
+    private static BigDecimal euler = BigDecimal.ONE;
+
+    public static BigDecimal euler() {
+        int n = 1000;
+        BigDecimal euler = BigDecimal.ONE;
+        BigDecimal faktor = BigDecimal.ONE;
+
+        for (int i = 1; i <= n; i++) {
+            faktor = faktor.divide(BigDecimal.valueOf(i), MathContext.DECIMAL128);
+            euler = euler.add(faktor);
         }
+        return euler;
     }
 
-    private static int fakultaet(int n){
-        if(n==0){
-            return 1;
+    public static BigDecimal euler(int n) {
+        BigDecimal euler = BigDecimal.ONE;
+        BigDecimal faktor = BigDecimal.ONE;
+
+        for (int i = 1; i <= n; i++) {
+            faktor = faktor.divide(BigDecimal.valueOf(i), MathContext.DECIMAL128);
+            euler = euler.add(faktor);
         }
-        for (int i = n; i > 1; i--){
-            n = n*(i-1);
-        }
-        return n;
+        return euler;
     }
+
+    public Euler(){
+        euler = euler();
+    }
+
+    public Euler(int n){
+        euler = euler(n);
+    }
+
 }

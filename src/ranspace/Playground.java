@@ -3,9 +3,9 @@ import ranmath.*;
 
 public class Playground {
     public static void main(String[] args) {
-
+        /*
         int zahl = 10;
-        double fakultaet = 0.0;
+        double fakultaet;
         boolean aufsteigend = true;
         if(!aufsteigend){
             for (int i = zahl; i>0; i--){
@@ -18,8 +18,9 @@ public class Playground {
                 System.out.println(fakultaet);
             }
         }
-
-        System.out.print(Euler.euler(30));
+        */
+        Euler.euler();
+        //Euler2.euler(100);
 
 
     }
