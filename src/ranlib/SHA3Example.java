@@ -1,4 +1,4 @@
-package ranmath;
+package ranlib;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

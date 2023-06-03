@@ -1,7 +1,7 @@
-package ranmath;
-
+package ranlib;
 import java.math.BigDecimal;
 import java.math.MathContext;
+
 
 public class Euler2 {
 

@@ -1,4 +1,4 @@
-package ranmath;
+package ranlib;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 

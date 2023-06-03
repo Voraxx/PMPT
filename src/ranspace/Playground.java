@@ -1,5 +1,5 @@
 package ranspace;
-import ranmath.*;
+import ranlib.*;
 
 public class Playground {
     public static void main(String[] args) {

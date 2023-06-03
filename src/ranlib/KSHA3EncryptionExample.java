@@ -1,6 +1,4 @@
-package ranmath;
-
-import java.nio.charset.StandardCharsets;
+package ranlib;
 
 public class KSHA3EncryptionExample {
     public static void main(String[] args) {
